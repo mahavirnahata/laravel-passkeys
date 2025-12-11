@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.5.2 - 2025-12-11
+
+### What's Changed
+
+* Fixed: Deprecation warning from symfony/http-foundation 7.4 by @holdmyglass in https://github.com/spatie/laravel-passkeys/pull/89
+
+### New Contributors
+
+* @holdmyglass made their first contribution in https://github.com/spatie/laravel-passkeys/pull/89
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.5.1...1.5.2
+
 ## 1.5.1 - 2025-11-27
 
 ### What's Changed
