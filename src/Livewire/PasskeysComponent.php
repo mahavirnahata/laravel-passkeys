@@ -20,7 +20,10 @@ class PasskeysComponent extends Component
 
     public function render(): View
     {
-        return view('passkeys::livewire.passkeys', data: [
+        /** @var view-string $view */
+        $view = 'passkeys::livewire.passkeys';
+
+        return view($view, data: [
             'passkeys' => $this->currentUser()->passkeys,
         ]);
     }

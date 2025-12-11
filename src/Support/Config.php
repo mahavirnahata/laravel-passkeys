@@ -31,7 +31,7 @@ class Config
         /** @var class-string<Authenticatable> $authenticatableModel */
         $authenticatableModel = config('passkeys.models.authenticatable');
 
-        foreach ([Authenticatable::class, HasPasskeys::class] as $interface) {
+        foreach ([HasPasskeys::class] as $interface) {
             if (! is_a($authenticatableModel, $interface, true)) {
                 throw InvalidAuthenticatableModel::missingInterface($authenticatableModel, $interface);
             }

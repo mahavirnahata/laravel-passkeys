@@ -16,6 +16,9 @@ class AuthenticatePasskeyComponent extends Component
             Session::put('passkeys.redirect', $this->redirect);
         }
 
-        return view('passkeys::components.authenticate');
+        /** @var view-string $view */
+        $view = 'passkeys::components.authenticate';
+
+        return view($view);
     }
 }
